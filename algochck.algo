@@ -1,0 +1,26 @@
+ALGORITHM nb-length- sentence
+VAR
+str: String= "the best of the world"
+count: INTEGER == 0
+BEGIN
+FOR (init i=0; i<str.length; i++) DO 
+If(str [i])!= ("") then 
+Count ++
+End-If
+End-FOR
+write(count)
+END
+
+ALGORITHM nb-words
+VAR
+str: String= "the best of the world"
+count: INTEGER == 0
+BEGIN
+    FOR i in str DO
+    IF(i == " ") then
+    count +=1
+    END_IF
+    END_FOR
+END
+
+
